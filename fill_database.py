@@ -9,6 +9,9 @@ from langchain_community.vectorstores import Chroma
 # Load environment variables (expects .env with OPENAI_API_KEY)
 load_dotenv()
 
+if not os.getenv("OPENAI_API_KEY"):
+    raise RuntimeError("OPENAI_API_KEY not found. Check your .env file.")
+
 # Paths for data and ChromaDB storage
 DATA_PATH = "data"
 CHROMA_PATH = "chroma_db"
