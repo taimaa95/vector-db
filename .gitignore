@@ -1,0 +1,8 @@
+.env        # Environment vairables 
+venv        # Activation script for virtual environment
+chroma_*
+chroma
+.DS_Store   # MacOS hidden system file
+
+.env
+.env.*
